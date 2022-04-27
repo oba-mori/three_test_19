@@ -247,13 +247,13 @@ const parentFunc = async function () {
 
 
     //GLB形式のモデルデータを読み込む
-    // const loader = new THREE.GLTFLoader();
+    const loader = new THREE.GLTFLoader();
 
-    // //glbファイルのパスを指定
-    // loader.load('./cube_small.glb', function(gltf) {
-    //     // 読み込み後に3D空間に追加
-    //     scene.add(gltf.scene);
-    // });
+    //glbファイルのパスを指定
+    loader.load('./cube_small.glb', function(gltf) {
+        // 読み込み後に3D空間に追加
+        scene.add(gltf.scene);
+    });
 
 
 
