@@ -109,22 +109,25 @@ https://note.com/npaka/n/na4dd3eaa8e82
 
 
 <!-- three.min.js(r137.4)を(ファイルから直接)読み込む three.js(r137.4)の圧縮版 -->
-<script src="./three.min.js"></script>
+<!-- <script src="./three.min.js"></script> -->
+
+<script src="https://unpkg.com/three@0.137.4/build/three.min.js"></script>
+
+
 
 <!-- GLTFLoader.js(r137.4)を(ファイルから直接)読み込む -->
-<script src="./GLTFLoader.js"></script>
+<!-- <script src="./GLTFLoader.js"></script> -->
 
-<!-- <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@master/examples/js/loaders/GLTFLoader.js"></script> -->
+<script src="https://unpkg.com/three@0.137.4/examples/js/loaders/GLTFLoader.js"></script>
 
 
 <script type="module">
 //three.module.js(ver0.137.4)からexportされたclassをimport (importするものを一つ一つ指定する必要もあるが数が多いとめんどくさいため、classに要素として追加してclass名で呼び出すと楽)
-//JSファイル(のclass)をCDNからimportする場合の書き方()
-// import * as THREE from 'https://unpkg.com/three@0.137.4/build/three.module.js';
-
 //JSファイル(のclass)を直接importする場合の書き方
-import * as THREE from './three.module.js';     //ver137.4
+// import * as THREE from './three.module.js';     //ver137.4
 
+//JSファイル(のclass)をCDNからimportする場合の書き方
+import * as THREE from 'https://unpkg.com/three@0.137.4/build/three.module.js';
 
 
 //const:修飾子  値の変更不可、ブロックスコープ「変数宣言した{}内でのみ呼び出し可能」、宣言のみはできず必ず値を代入する必要がある
