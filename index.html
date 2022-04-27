@@ -127,7 +127,7 @@ https://note.com/npaka/n/na4dd3eaa8e82
 // import * as THREE from './three.module.js';     //ver137.4
 
 //JSファイル(のclass)をCDNからimportする場合の書き方
-import * as THREE from 'https://unpkg.com/three@0.113.2/build/three.module.js';
+import * as THREE from 'https://unpkg.com/three@0.113.2/build/three.module.js'; //113.2
 
 
 //const:修飾子  値の変更不可、ブロックスコープ「変数宣言した{}内でのみ呼び出し可能」、宣言のみはできず必ず値を代入する必要がある
@@ -247,7 +247,7 @@ const parentFunc = async function () {
 
 
     //GLB形式のモデルデータを読み込む
-    // const loader = new THREE.GLTFLoader();
+    const loader = new THREE.GLTFLoader();
 
     // //glbファイルのパスを指定
     // loader.load('./cube_small.glb', function(gltf) {
